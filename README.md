@@ -6,7 +6,8 @@
 
 ## 📱 Demo
 
-https://drive.google.com/file/d/1SICUciBNLlFh5hXI-P7QLZPjdEQbDONR/view?usp=sharing
+https://drive.google.com/file/d/1SICUciBNLlFh5hXI-P7QLZPjdEQbDONR/view 
+
 ---
 
 ## 📦 Chat Library
@@ -54,3 +55,10 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+```
+
+---
+
+## ✍️ Author
+
+@aiiisana
