@@ -12,8 +12,14 @@ pluginManagement {
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        maven {
+            url = uri("https://maven.pkg.github.com/aiiisana/chat-library")
+            credentials {
+                username = providers.gradleProperty("gpr.user").orNull ?: System.getenv("USERNAME_GITHUB")
+                password = providers.gradleProperty("gpr.key").orNull ?: System.getenv("TOKEN_GITHUB")
+            }
+        }
         google()
         mavenCentral()
     }

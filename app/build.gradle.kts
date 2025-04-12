@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "advanced.lab.chat"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "advanced.lab.chat"
-        minSdk = 21
-        targetSdk = 34
+        minSdk = 24
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -38,10 +38,6 @@ android {
     }
     buildFeatures {
         viewBinding = true
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
     }
     packaging {
         resources {
@@ -62,4 +58,5 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.recyclerview:recyclerview:1.3.1")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation(libs.chatlibrary)
 }
